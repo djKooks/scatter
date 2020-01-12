@@ -1,8 +1,8 @@
-defmodule CatapultTest do
+defmodule ScatterTest do
   use ExUnit.Case
-  doctest Catapult
+  doctest Scatter
 
   test "greets the world" do
-    assert Catapult.hello() == :world
+    assert Scatter.hello() == :world
   end
 end

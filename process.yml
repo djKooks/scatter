@@ -1,0 +1,8 @@
+host: localhost
+port: 8080
+test:
+  request:
+    type: GET,
+    api: /api/for/test
+
+
