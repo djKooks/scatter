@@ -5,10 +5,10 @@ defmodule Action do
 
   """
   def call do
-    {:ok, conn} = Mint.HTTP.connect(:http, "localhost", 3001)
+    {:ok, conn} = Mint.HTTP.connect(:http, "localhost", 8080)
     Logger.info "Run github call"
     {:ok, conn, request_ref} =
-      Mint.HTTP.request(conn, "GET", "/v1/bank-master/banks/contract-with-maintenance", [
+      Mint.HTTP.request(conn, "GET", "/api/for/test", [
         {"content-type", "application/json"}
       ], "")
 
